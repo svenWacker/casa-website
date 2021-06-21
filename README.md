@@ -1,4 +1,4 @@
-# Getting Started with Translate To Morse App
+# Casa Website
 
 This project was made by hand [Run Casa Website](http://svenWacker.github.io/casa-website).
 
