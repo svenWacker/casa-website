@@ -1,0 +1,49 @@
+.main-heading {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: $clr-primary;
+  border-radius: 0.5rem;
+  color: $clr-neutral-100;
+  text-align: center;
+}
+
+.page-headings {
+  margin-left: 30px;
+}
+
+.home,
+.contact,
+.address,
+.hello,
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.hello {
+  margin-top: 4rem;
+}
+.casa-image {
+  width: 800px;
+  height: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .casa-image {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .casa-image {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .casa-image {
+    width: 250px;
+  }
+}

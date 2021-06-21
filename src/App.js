@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import About from "./components/About";
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+import Soon from "./components/Soon";
+import Footer from "./components/Footer";
+import Blumisch from "./components/Blumisch";
+import Beweglisch from "./components/Beweglisch";
+import Teschnisch from "./components/Teschnisch";
+import Mitmachen from "./components/Mitmachen";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <NavBar />
+        {/* <h1 className="main-heading">CASA Website</h1> */}
+        <Switch>
+          {
+            // <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} />
+          }
+          <Route path="/" exact component={Home} />
+          <Route path="/casa-website" exact component={Home} />
+          <Route path="/about" exact component={About} />
+          <Route path="/blumisch" exact component={Blumisch} />
+          <Route path="/beweglisch" exact component={Beweglisch} />
+          <Route path="/teschnisch" exact component={Teschnisch} />
+          <Route path="/mitmachen" exact component={Mitmachen} />
+          <Route path="/contact" exact component={Contact} />
+          <Route path={() => "/main" || "/admin" || "/any-other-word"}>
+            <Soon />
+          </Route>
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
-}
-
+};
 export default App;
