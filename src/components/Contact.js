@@ -15,7 +15,14 @@ const About = () => {
         ></iframe>
       </div>
       <div className="address">
-        <h1>CASA</h1>
+        <div id="logo-wrapper">
+          <h1 className="logo">
+            <span className="logo_clr1">C</span>
+            <span className="logo_clr2">A</span>
+            <span className="logo_clr3">S</span>
+            <span className="logo_clr4">A</span>
+          </h1>
+        </div>
         <h3>Die Bunte Vielfalt</h3>
         <br></br>
         <h4>Telefon</h4>

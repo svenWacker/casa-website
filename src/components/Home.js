@@ -4,8 +4,17 @@ const Home = () => {
       <h1 className="main-heading">CASA Website</h1>
       <div className="home">
         <h1>Hallo Ihr Lieben!</h1>
+        <br />
         <h2>Hier entsteht die Internetpräsenz vom</h2>
-        <h1>CASA.</h1>
+        <br />
+        <div id="logo-wrapper">
+          <h1 className="logo">
+            <span className="logo_clr1">C</span>
+            <span className="logo_clr2">A</span>
+            <span className="logo_clr3">S</span>
+            <span className="logo_clr4">A</span>
+          </h1>
+        </div>
 
         <img
           className="casa-image"

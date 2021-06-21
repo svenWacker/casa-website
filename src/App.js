@@ -16,11 +16,7 @@ const App = () => {
     <Router>
       <div className="app">
         <NavBar />
-        {/* <h1 className="main-heading">CASA Website</h1> */}
         <Switch>
-          {
-            // <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} />
-          }
           <Route path="/" exact component={Home} />
           <Route path="/casa-website" exact component={Home} />
           <Route path="/about" exact component={About} />

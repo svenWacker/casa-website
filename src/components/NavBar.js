@@ -3,7 +3,14 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   return (
     <nav className="navbar">
-      <h1>CASA</h1>
+      <div id="logo-wrapper">
+        <h1 className="logo">
+          <span className="logo_clr1">C</span>
+          <span className="logo_clr2">A</span>
+          <span className="logo_clr3">S</span>
+          <span className="logo_clr4">A</span>
+        </h1>
+      </div>
 
       {/* <ul className="nav-links"> */}
       <Link to="/" style={{ textDecoration: "none" }}>
