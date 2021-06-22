@@ -6,12 +6,12 @@
 }
 nav li {
   list-style: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: $clr-neutral-900;
 }
 
 nav li:hover {
-  color: $clr-secondary;
-  transform: scale(1.2);
+  color: $clr-neutral-500;
+  transform: scale(1.4);
   transition: 0.2s;
 }

@@ -3,7 +3,7 @@
 :root {
   font-family: $ff-primary;
   color: $fontColor;
-  background-color: black;
+  background-color: white;
 }
 
 body {
@@ -24,7 +24,6 @@ body {
   max-width: 1440px;
   min-height: 100vh;
   border-radius: 15px;
-  background-color: $clr-tertiary;
 }
 
 @media (min-width: 800px) {

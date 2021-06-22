@@ -1,7 +1,7 @@
-const Blumisch = () => {
+const Blumig = () => {
   return (
-    <div>
-      <h1 className="main-heading">
+    <div className="blumig-wrapper">
+      <h1 className="main-heading blumig-heading">
         Blumen, Deko, Geschenke, Feierlichkeit & Tauer
       </h1>
       <h2>Coming Soon</h2>
@@ -10,4 +10,4 @@ const Blumisch = () => {
   );
 };
 
-export default Blumisch;
+export default Blumig;

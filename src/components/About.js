@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <React.Fragment>
-      <h1 className="main-heading">Über uns</h1>
+      <h1 className="main-heading color-heading">Über uns</h1>
       <div className="about">
         <div>
           <h3>Das Gesamtprojekt</h3>

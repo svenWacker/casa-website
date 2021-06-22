@@ -8,12 +8,12 @@
   .social-wrapper {
     font-size: 1.4rem;
     .social {
-      color: $clr-primary;
       font-size: 2rem;
+      color: $clr-neutral-900;
       margin: 1rem;
     }
     .social:hover {
-      color: $clr-secondary;
+      color: $clr-neutral-500;
       transform: scale(1.8);
       transition: 0.3s;
     }
