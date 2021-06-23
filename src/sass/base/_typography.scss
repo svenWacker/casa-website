@@ -5,18 +5,18 @@
   color: $fontColor;
 }
 
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-  display: none;
-}
-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
+// body {
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+// /* Hide scrollbar for Chrome, Safari and Opera */
+// body::-webkit-scrollbar {
+//   display: none;
+// }
+// body {
+//   -ms-overflow-style: none; /* IE and Edge */
+//   scrollbar-width: none; /* Firefox */
+// }
 
 // .app {
 //   margin: 0 auto;
@@ -35,8 +35,6 @@ body {
 // }
 .app {
   padding: 0 3rem;
-  width: 100vw;
-  height: 100vh;
   background-image: linear-gradient(
     to right top,
     #5d7b6f,
