@@ -3,7 +3,6 @@
 :root {
   font-family: $ff-primary;
   color: $fontColor;
-  background-color: white;
 }
 
 body {
@@ -19,18 +18,31 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
-.app {
-  margin: 0 auto;
-  max-width: 1440px;
-  min-height: 100vh;
-  border-radius: 15px;
-}
+// .app {
+//   margin: 0 auto;
+//   max-width: 1440px;
+//   min-height: 100vh;
+//   border-radius: 15px;
+// }
 
-@media (min-width: 800px) {
-  .app {
-    padding: 0 100px;
-    margin-top: 3vh;
-    min-height: 94vh;
-    flex-wrap: wrap;
-  }
+// @media (min-width: 800px) {
+//   .app {
+//     padding: 0 100px;
+//     margin-top: 3vh;
+//     min-height: 94vh;
+//     flex-wrap: wrap;
+//   }
+// }
+.app {
+  padding: 0 3rem;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #5d7b6f,
+    #a4c3a2,
+    #b0dab8,
+    #eae7d6,
+    #d7f9fa
+  );
 }

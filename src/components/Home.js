@@ -1,7 +1,7 @@
 const Home = () => {
   return (
     <div className="home-wrapper">
-      <h1 className="main-heading">CASA Website</h1>
+      <h1 className="main-heading color-heading">CASA Website</h1>
       <div className="home">
         <h1>Hallo Ihr Lieben!</h1>
         <br />
