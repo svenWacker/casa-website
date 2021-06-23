@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/casa-website/static/css/main.b817032d.chunk.css",
-    "main.js": "/casa-website/static/js/main.7f652547.chunk.js",
-    "main.js.map": "/casa-website/static/js/main.7f652547.chunk.js.map",
+    "main.css": "/casa-website/static/css/main.a18b2ffb.chunk.css",
+    "main.js": "/casa-website/static/js/main.3f03c694.chunk.js",
+    "main.js.map": "/casa-website/static/js/main.3f03c694.chunk.js.map",
     "runtime-main.js": "/casa-website/static/js/runtime-main.139a0873.js",
     "runtime-main.js.map": "/casa-website/static/js/runtime-main.139a0873.js.map",
     "static/js/2.292bddad.chunk.js": "/casa-website/static/js/2.292bddad.chunk.js",
     "static/js/2.292bddad.chunk.js.map": "/casa-website/static/js/2.292bddad.chunk.js.map",
     "index.html": "/casa-website/index.html",
-    "static/css/main.b817032d.chunk.css.map": "/casa-website/static/css/main.b817032d.chunk.css.map",
+    "static/css/main.a18b2ffb.chunk.css.map": "/casa-website/static/css/main.a18b2ffb.chunk.css.map",
     "static/js/2.292bddad.chunk.js.LICENSE.txt": "/casa-website/static/js/2.292bddad.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.139a0873.js",
     "static/js/2.292bddad.chunk.js",
-    "static/css/main.b817032d.chunk.css",
-    "static/js/main.7f652547.chunk.js"
+    "static/css/main.a18b2ffb.chunk.css",
+    "static/js/main.3f03c694.chunk.js"
   ]
 }
