@@ -3,15 +3,18 @@
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   min-height: 60vh;
+  flex-wrap: wrap;
   .map {
+    flex-wrap: wrap;
   }
   .adress {
+    flex-wrap: wrap;
   }
   .contact {
     display: flex;
     flex-direction: column;
-
-    form {
+    flex-wrap: wrap;
+    flex-position:flexend form {
       display: flex;
       flex-direction: column;
     }
