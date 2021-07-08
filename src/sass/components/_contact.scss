@@ -1,0 +1,19 @@
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  .map {
+    width: 40vw;
+    // height: 60vh;
+    justify-content: center;
+  }
+  .adress {
+    width: 40vw;
+    justify-content: center;
+  }
+  .contact {
+    width: 40vw;
+    justify-content: center;
+  }
+}
