@@ -1,4 +1,4 @@
-import { FaMailBulk, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaMailBulk, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -14,6 +14,9 @@ const Footer = () => {
         </a>
         <a href="#" target="_blank">
           <FaFacebook className="social" />
+        </a>
+        <a href="#" target="_blank">
+          <FaTwitter className="social" />
         </a>
       </div>
       <div className="copyright">

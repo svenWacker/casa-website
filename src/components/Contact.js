@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
-import { FaMapMarker, FaEnvelope, FaCode } from "react-icons/fa";
+import { FaPhone, FaMapMarker, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   const [values, setValues] = useState({
@@ -80,118 +80,130 @@ const Contact = () => {
           </Link>
           <h3>Die Bunte Vielfalt</h3>
           <br></br>
-          <h4>Telefon</h4>
+          <h4>
+            <FaPhone />
+            &nbsp; Telefon
+          </h4>
           <p>06351 124181</p>
-          <h4>Email</h4>
+          <h4>
+            <FaEnvelope />
+            &nbsp; Email
+          </h4>
           <p>casa-verde@t-online.de</p>
-          <h4>Address</h4>
+          <h4>
+            <FaMapMarker />
+            &nbsp; Address
+          </h4>
           <p>
             Hauptstraße 28A
             <br /> 67304 Eisenberg
             <br /> Germany
           </p>
         </div>
-        <div></div>
-        <div className="FormInfo">
-          <form
-            target="_blank"
-            action="https://formsubmit.co/dc4185d72bb2395f901272e01e22678b"
-            method="POST"
-            onSubmit={handleSubmit}
-          >
-            <div className="PartOne">
-              <span>
-                <label htmlFor="fullName">Vor- und Zuname *</label>
+        <div>
+          <div className="contact">
+            <form
+              target="_blank"
+              action="https://formsubmit.co/dc4185d72bb2395f901272e01e22678b"
+              method="POST"
+              onSubmit={handleSubmit}
+            >
+              <div className="PartOne">
+                <span>
+                  <label htmlFor="fullName">Vor- und Zuname *</label>
+                  <br />
+                  <input
+                    type="text"
+                    id="fullName"
+                    required
+                    placeholder="Vor- und Zuname"
+                    name="fullName"
+                    value={values.fullName}
+                    onChange={handleFullNameInputChange}
+                  />
+                  <br />
+                  {submitted && !values.fullName && (
+                    <span id="full-name-error">
+                      Bitte geben Sie Ihren ganzen Namen ein!
+                    </span>
+                  )}
+                </span>
+                <span>
+                  <label htmlFor="email"> E-Mail *</label> <br />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    placeholder="Bitte E-Mail eingeben"
+                    value={values.email}
+                    onChange={handleEmailInputChange}
+                  />
+                  {submitted && !values.email && (
+                    <span id="email-error">
+                      Bitte geben Sie eine gültige E-Mail ein
+                    </span>
+                  )}
+                </span>
+              </div>
+
+              <div className="PartTwo">
+                <label htmlFor="subject">Betreff *</label>
                 <br />
+
                 <input
                   type="text"
-                  id="fullName"
+                  id="subject"
+                  placeholder="Betreff"
+                  name="subject"
                   required
-                  placeholder="Vor- und Zuname"
-                  name="fullName"
-                  value={values.fullName}
-                  onChange={handleFullNameInputChange}
+                  value={values.subject}
+                  onChange={handleSubjectlInputChange}
                 />
-                {submitted && !values.fullName && (
-                  <span id="full-name-error">
-                    Bitte geben Sie Ihren ganzen Namen ein!
+                {submitted && !values.subject && (
+                  <span id="subject-error">
+                    Bitte geben Sie einen Betreff an
                   </span>
                 )}
-              </span>
+              </div>
 
-              <span>
-                <label htmlFor="email"> E-Mail *</label> <br />
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
+              <div className="PartThree">
+                <label htmlFor="feedback">Ihre Nachricht: *</label>
+                <br />
+                <textarea
+                  name="feedback"
+                  id="feedback"
+                  cols="30"
+                  rows="10"
                   required
-                  placeholder="Bitte E-Mail eingeben"
-                  value={values.email}
-                  onChange={handleEmailInputChange}
-                />
-                {submitted && !values.email && (
-                  <span id="email-error">
-                    Bitte geben Sie eine gültige E-Mail ein
+                  placeholder="Hallo!"
+                  value={values.feedback}
+                  onChange={handleFeedbacklInputChange}
+                ></textarea>
+                {submitted && !values.feedback && (
+                  <span id="feedback-error">
+                    Bitte schreiben Sie Ihre Nachricht!
                   </span>
                 )}
-              </span>
-            </div>
-
-            <div className="PartTwo">
-              <label htmlFor="subject">Betreff *</label>
-              <br />
-
+              </div>
+              <div className="PartFour">
+                <button type="submit" value="Submit" target="_blank">
+                  Submit
+                </button>
+              </div>
               <input
-                type="text"
-                id="subject"
-                placeholder="Betreff"
-                name="subject"
-                required
-                value={values.subject}
-                onChange={handleSubjectlInputChange}
+                type="hidden"
+                name="_autoresponse"
+                value="Thank you! your message has been received and I will reply to you as soon as possible."
               />
-              {submitted && !values.subject && (
-                <span id="subject-error">Bitte geben Sie einen Betreff an</span>
-              )}
-            </div>
-
-            <div className="PartThree">
-              <label htmlFor="feedback">Ihre Nachricht: *</label>
-              <br />
-              <textarea
-                name="feedback"
-                id="feedback"
-                cols="30"
-                rows="10"
-                required
-                placeholder="Hallo!"
-                value={values.feedback}
-                onChange={handleFeedbacklInputChange}
-              ></textarea>
-              {submitted && !values.feedback && (
-                <span id="feedback-error">
-                  Bitte schreiben Sie Ihre Nachricht!
-                </span>
-              )}
-            </div>
-            <div className="PartFour">
-              <button type="submit" value="Submit" target="_blank">
-                Submit
-              </button>
-            </div>
-            <input
-              type="hidden"
-              name="_autoresponse"
-              value="Thank you! your message has been received and I will reply to you as soon as possible."
-            />
-            <input type="hidden" name="_subject" value="Message received" />
-          </form>
-          {submitted && (
-            <div className="SuccessMessage">
-              Vielen Dank für Ihre E-Mail, wir melden uns bei Ihnen.
-            </div>
-          )}
+              <input type="hidden" name="_subject" value="Message received" />
+            </form>
+            {submitted && (
+              <div className="SuccessMessage">
+                Vielen Dank für Ihre E-Mail, wir melden uns bei Ihnen.
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </React.Fragment>

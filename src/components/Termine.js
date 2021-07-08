@@ -1,6 +1,6 @@
 const Termine = () => {
   return (
-    <div>
+    <div className="termine-wrapper">
       <h1 className="main-heading color-heading">
         Termine und Veranstaltungen
       </h1>

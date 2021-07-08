@@ -1,19 +1,19 @@
 .contact-wrapper {
-  display: flex;
-  align-items: center;
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   width: 100%;
+  min-height: 60vh;
   .map {
-    width: 40vw;
-    // height: 60vh;
-    justify-content: center;
   }
   .adress {
-    width: 40vw;
-    justify-content: center;
   }
   .contact {
-    width: 40vw;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

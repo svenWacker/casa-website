@@ -37,9 +37,9 @@ const Contact = () => {
             autem quasi illum dolorem. Rerum nostrum adipisci provident sed
             iusto aspernatur cumque?
           </p>
-          <h5>Blumisch - Maria</h5>
-          <h5>Beweglisch - Birgit</h5>
-          <h5>Teschnisch - Sven</h5>
+          <h5>Blumiges - Maria</h5>
+          <h5>Bewegung - Birgit</h5>
+          <h5>Technik - Sven</h5>
         </div>
         <div>
           <h3>Mitmachen</h3>
