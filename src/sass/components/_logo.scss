@@ -1,0 +1,19 @@
+.logo-wrapper {
+  border: black 1px solid;
+  .logo {
+    font-size: 3.2rem;
+    font-weight: bold;
+    .logo_clr1 {
+      color: $clr-gruen;
+    }
+    .logo_clr2 {
+      color: $clr-orange;
+    }
+    .logo_clr3 {
+      color: $clr-blau;
+    }
+    .logo_clr4 {
+      color: $clr-lila;
+    }
+  }
+}

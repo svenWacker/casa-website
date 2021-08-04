@@ -23,7 +23,7 @@
 .hello,
 .person {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 1rem;
@@ -53,29 +53,6 @@
     width: 300px;
   }
 }
-h1,
-h2,
-h3 {
-  font-family: $ff-accent;
-}
-#logo-wrapper {
-  .logo {
-    font-size: 4.2rem;
-    font-weight: bold;
-    .logo_clr1 {
-      color: $clr-gruen;
-    }
-    .logo_clr2 {
-      color: $clr-orange;
-    }
-    .logo_clr3 {
-      color: $clr-blau;
-    }
-    .logo_clr4 {
-      color: $clr-lila;
-    }
-  }
-}
 
 .mitmachen-heading {
   background-color: $clr-lila;
@@ -100,5 +77,4 @@ h3 {
     $clr-blau 50%,
     $clr-lila 75%
   );
-  // background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
 }

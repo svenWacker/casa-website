@@ -2,20 +2,30 @@
 
 :root {
   font-family: $ff-primary;
-  color: $fontColor;
+  color: $clr-neutral-900;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   display: none;
 }
 body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  background-image: linear-gradient(
+    to right top,
+    #5d7b6f,
+    #a4c3a2,
+    #b0dab8,
+    #eae7d6,
+    #d7f9fa
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 // .app {
@@ -33,16 +43,18 @@ body {
 //     flex-wrap: wrap;
 //   }
 // }
-.app {
-  padding: 0 3rem;
-  width: 100vw;
-  height: 100vh;
-  background-image: linear-gradient(
-    to right top,
-    #5d7b6f,
-    #a4c3a2,
-    #b0dab8,
-    #eae7d6,
-    #d7f9fa
-  );
+// .app {
+//   background-image: linear-gradient(
+//     to right top,
+//     #5d7b6f,
+//     #a4c3a2,
+//     #b0dab8,
+//     #eae7d6,
+//     #d7f9fa
+//   );
+// }
+h1,
+h2,
+h3 {
+  font-family: $ff-accent;
 }

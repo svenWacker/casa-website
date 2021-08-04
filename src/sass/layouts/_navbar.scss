@@ -1,12 +1,14 @@
 .navBar {
   display: flex;
-  display: inline-block;
-  width: 100vw;
-  height: 10vh;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-nav li {
+ul {
+  display: flex;
+}
+.navbar li {
+  margin: 1rem;
   list-style: none;
-  font-size: 1.2rem;
   color: $clr-neutral-900;
 }
 
